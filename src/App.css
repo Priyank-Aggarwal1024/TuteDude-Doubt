@@ -1,0 +1,196 @@
+.section {
+  padding: 64px 64px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-pink {
+  color: #800080;
+
+}
+
+.doubt-solve-heading {
+  color: #000;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  line-height: 120%;
+  text-align: center;
+  margin-bottom: 56px;
+  /* 57.6px */
+}
+
+.doubt-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 37px;
+  row-gap: 26px;
+  align-items: center;
+
+}
+
+.doubt-right>img {
+  width: 100%;
+  aspect-ratio: 628/337;
+  max-width: 600px;
+}
+
+.doubt-left {
+  border-radius: 28px;
+  background: var(--Color-2, #FFF);
+  box-shadow: 0px 4px 25.3px 0px rgba(137, 137, 137, 0.25);
+  position: relative;
+  padding: 36px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+  overflow: hidden;
+
+}
+
+.doubt-design {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 28px;
+}
+
+.doubt-card {
+
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+
+.dc-left>img {
+  width: 77px;
+  height: 77px;
+}
+
+.dc-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 12px;
+}
+
+.dc-text {
+  color: #000;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  opacity: 0.7;
+}
+
+.dc-heading {
+  color: #000;
+  text-align: start;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%;
+  /* 36px */
+}
+
+@media (width<1280px) {
+  .section {
+    padding: 64px 32px;
+  }
+}
+
+@media (width<980px) {
+  .doubt-solve-heading {
+    font-size: 42px;
+  }
+
+  .doubt-main {
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+
+  }
+
+  .doubt-right {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (width<780px) {
+  .doubt-solve-heading {
+    font-size: 36px;
+  }
+
+  .section {
+    padding: 32px 32px;
+  }
+}
+
+@media (width<580px) {
+  .section {
+    padding: 32px 16px;
+  }
+
+  .dc-text {
+    font-size: 16px;
+
+  }
+
+  .doubt-card {
+    gap: 16px;
+  }
+
+  .doubt-left {
+    gap: 24px;
+  }
+
+  .dc-left>img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .doubt-card {
+    align-items: start;
+  }
+
+  .dc-heading {
+
+    font-size: 25px;
+
+  }
+}
+
+@media (width<480px) {
+  .doubt-solve-heading {
+    font-size: 30px;
+  }
+
+  .dc-text {
+    font-size: 14px;
+
+  }
+
+  .dc-heading {
+
+    font-size: 20px;
+
+  }
+}
+
+@media (width<360px) {
+  .section {
+    padding: 32px 12px;
+  }
+}
